@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+</head>
+<body>
+    <h1>Conversor de monedas</h1>
+  <form action="conversor_moneda.php" method="post">
+    <label for="dinero">Dinero:</label>
+    <input type="number" name="dinero"><br><br>
+
+    <label for="moneda">Tipo de moneda:</label>
+    <select name="moneda" required>
+      <option value="bitcoin">Bitcoin (₿)</option>
+      <option value="dolar">Dólar Americano ($)</option>
+      <option value="libra">Libra Esterlina (£)</option>
+      <option value="yen">Yen Japonés (¥)</option>
+    </select><br><br>
+
+    <input type="submit" value="Calcular">
+  </form>
+    <!-- <h1>Conversor de monedas</h1>
+    <form method="get" action="conversor_moneda.php">
+        <label for="m_money"> Dinero: </label>
+        <input type="number" name="money">
+        <p>Moneda a la que desea convertirlo<br></p>
+        <input type="checkbox" id="m_bitcoin" name="moneda[]" value="bitcoin">
+        <label for="m_bitcoin">bitcoin</label><br>
+        <input type="checkbox" id="m_bitcoin" name="moneda[]" value="dolar">
+        <label for="m_dolar">dolar</label><br>
+        <input type="checkbox" id="m_bitcoin" name="moneda[]" value="libra">
+        <label for="m_libra">libra esterlina</label><br>
+        <input type="checkbox" id="m_bitcoin" name="moneda[]" value="yen">
+        <label for="m_yen">yen japones</label><br>
+        <p><input type="submit" name="botonEnviar" value="Enviar datos"></p>  
+    </form> -->
+</body>
+</html>
